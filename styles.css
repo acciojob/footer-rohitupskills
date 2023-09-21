@@ -1,101 +1,41 @@
+ 
 /* your code here */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
 footer{
-    background-color: #000;
-    width: 100%;
+	background-color:black;
+	color:white;
+	box-sizing:border-box;
 }
-.top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px 110px 30px 110px;
-}
-.logo-details span{
-    color: white;
-    font-size: 60px;
+.logo-detail, .top, .media-icons{
+	display:flex;
+	justify-content:flex-start;
 }
 .media-icons{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
+	justify-content:flex-end;
 }
-.media-icons #facebook,#instagram,#twiter,#linkedin,#youtube i{
-  font-size: 25px;
-  
+.box{
+	max-width:22%;
 }
-.media-icons #facebook,#instagram,#twiter,#linkedin,#youtube{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#facebook{
-    background-color: #4267B2;
-}
-#twiter{
-    background-color: #1DA1F2;
-}
-#instagram{
-    background-color: #E1306C;
-}
-#linkedin{
-    background-color: #0077B5;
-}
-#youtube{
-    background-color: #FF0000;
-}
+ 
 .link-boxes{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px 0px 40px 0px;
-
-}
-#links,#services,#other,#contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-span>a{
-    text-decoration: none;
-    color: #b0b0b0;
-    font-weight: 400;
-}
-.title{
-    color: #f4f1ed;
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 2px solid white;
-}
-#contact{
-    margin-bottom: 15px;
-}
-.contact-details p{
-    color: white;
-    padding: 10px;
+	display:flex;
+	flex-direction:row;
 }
 .bottom-details{
-    background-color: #2C303A;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	background-color:#2c303a;
+	height:30px;
+	display:flex;
 }
-#copy,#policy p{
-    color: white;
-    /* padding-inline: 110px; */
-    padding: 30px 110px 30px 110px;
+.copy-right, .policy-terms{
+	width:40%;
+	margin:5px;
+	margin-left:10px;
+/* 	align-item:center; */
+}
+.policy-terms{
+	width:50%;
+	justify-content:flex-end;
+}
+a:link{
+	text-decoration:none;
+	color:white;
 }
